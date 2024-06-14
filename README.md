@@ -1,2 +1,7 @@
-#Developed a web-based news aggregator using Django to fetch and display top news headlines and descriptions from various sources.
-#Technologies Used:HTML, CSS, News API,Django.
+Headline Chronicle is a web-based news aggregator built using Django. It fetches and displays top news headlines and descriptions from various sources using the News API.
+
+Technologies Used
+HTML
+CSS
+Django
+News API
