@@ -1,0 +1,38 @@
+<!-- news/templates/news/index.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="{% static 'news/css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-QTD8NlV51eZQkmXp/5lzmOYqNEDi/CSJvHvdZTd62oW7J1p7Gonl2UsJN4Y7UwU4Z8oFFqTG4BdzDH5aFFW5Lw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-title">HeadlineChronicle</h1>
+    
+
+        <div class="news-cards">
+            {% for article in articles %}
+            <div class="news-card">
+                <div class="news-header">
+                    <h2><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h2>
+                </div>
+                <div class="news-body">
+                    <p>{{ article.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</body>
+
+</html>
