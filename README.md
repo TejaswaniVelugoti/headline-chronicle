@@ -6,4 +6,4 @@ CSS
 Django
 News API
 
-![Output](static/images/news_img.jpeg)
+![Output](output)
